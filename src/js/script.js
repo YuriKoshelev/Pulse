@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
+//Carusel************************************************************************    
+
     const slider = tns({
         container: '.carusel__inner',
         items: 1,
         slideBy: 'page',
         autoplay: false,
         controls: false,
-        nav: false
+        nav: false,
+        animateDelay: 5000
       });
     
     document.querySelector('.button-prev').addEventListener('click', () => {
@@ -16,6 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
         slider.goTo('next');
     }); 
     
+
+//Tabs***************************************************************************
+
     const tabs = document.querySelectorAll(".catalog__tab");
     const tabsContent = document.querySelectorAll(".catalog__content");
     
@@ -48,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    
+
     function onClickDetail(index, on) {
         console.log(index);
         
@@ -76,5 +83,94 @@ document.addEventListener('DOMContentLoaded', () => {
             onClickDetail(index, false);
         });
     });
+
+
+
+//Modal*****************************************************************
+
+    const buttonsOrder = document.querySelectorAll('.button_mini');
+    const buttonsClose = document.querySelectorAll('.modal__close');
+    const buttonsConsultation = document.querySelectorAll('[data-cons]');
+    const overlay = document.querySelector('.overlay');
+    const modalOrder = document.querySelector('#order');
+    const modalConsultation = document.querySelector('#consultation');
+    const modalThanks = document.querySelector('#thanks');
+    
+    buttonsOrder.forEach((item, index) => {
+        item.addEventListener('click', (i) => {
+            overlay.style.display = 'block';
+            modalOrder.style.display = 'block';
+
+            const product = document.querySelectorAll('.catalog-item__subtitle')[index].textContent;
+
+            document.querySelector('#order .modal__descr').textContent = product;
+
+        });
+    });
+
+    buttonsConsultation.forEach((item) => {
+        item.addEventListener('click', () => {
+            modalConsultation.style.display = 'block';
+            overlay.style.display = 'block';
+        });
+    });
+
+    const closeModal = () => {
+        overlay.style.display = 'none';
+        modalOrder.style.display = 'none';
+        modalConsultation.style.display = 'none';
+        modalThanks.style.display = 'none';
+    };
+
+    buttonsClose.forEach((item) => {
+        item.addEventListener('click', closeModal);
+    });
+
+//POST**************************************************************************
+
+    const postData = async (url, data) => {
+        let res = await fetch(url, {
+            method: 'POST',
+            body: data
+        });
+
+        return await res.text();
+    };
+
+    document.querySelectorAll('.feed-form').forEach((item) => {
+        
+        item.addEventListener("submit", (i) => {
+            i.preventDefault();
+            
+            let formData = new FormData(item);
+            console.log(formData);
+            postData('mailer/smart.php', formData)
+                .then(res => {
+                    console.log(res);
+                })
+                .catch(() => {
+                    console.log('Ошибка отправки');
+                })
+                .finally(() => {
+                    closeModal();
+                    overlay.style.display = 'block';
+                    modalThanks.style.display = 'block';
+                    setTimeout(closeModal, 3000);
+                    
+                    document.querySelectorAll('input').forEach((item) => {
+                        item.value = '';
+                    });
+                });
+        });
+    });
+    
+
+//Scroll, button up********************************************
+    window.addEventListener('scroll', () => {
+        //console.log();
+    });
+    
+
+
 });
 
