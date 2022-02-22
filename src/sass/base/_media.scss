@@ -1,0 +1,537 @@
+@media (max-width: 991px) {
+    .promo {
+        min-height: 500px;
+        height: 500px;
+        &__header {
+            font-size: 37px;
+        }
+        &__subheader {
+            font-size: 21px;
+        }
+        &__icons {
+            margin-top: 30px;
+        }
+        &__wrapper {
+            margin-top: 46px;
+        }
+    }
+    .button_main {
+        margin-top: 50px;
+    }
+    .carusel {
+        .button-prev {
+            left: 0;
+        }
+        .button-next {
+            right: 0;
+        }
+    }
+    .catalog {
+        margin-top: 50px;
+    }
+    .reviews {
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 26px;
+    }
+    .promo {
+        min-height: 472px;
+        height: 472px;
+        padding: 21px 15px 93px 15px;
+        &__header {
+            font-size: 30px;
+            line-height: 17px;
+        }
+        &__subheader {
+            font-size: 17px;
+        }
+        &__icons {
+            width: 376px;
+        }
+        .button_main {
+            width: 250px;
+            height: 42px;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    .benefits {
+        &__subtitle {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        &__descr {
+            margin-top: 15px;
+            font-size: 11px;
+        }
+    }
+    .consultation {
+        padding-left: 15px;
+        min-height: 511px;
+        .title_left {
+            font-size: 22px;
+        }
+        &__descr {
+            font-size: 16px;
+        }
+        .feed-form {
+            width: 30%;
+            margin-top: 16px;
+            input {
+                height: 38px;
+                margin-bottom: 11px;
+            }
+            .button_submit {
+                height: 41px;
+                font-size: 14px;
+            }
+        }
+    }
+    .carusel {
+        min-height: 455px;
+        padding-bottom: 0;
+        height: 455px;
+        .tns-outer {
+            img {
+                height: 60%;
+                width: 60%;
+            }
+        }
+        
+        .button-prev {
+            left: 55px;
+            img {
+                height: 60%;
+                width: 60%;
+            }
+        }
+        .button-next {
+            right: 55px;
+            img {
+                height: 60%;
+                width: 60%;
+            }
+        }
+        .button-prev, .button-next  {
+            top: 37%;
+            img {
+                height: 60%;
+                width: 60%;
+            }
+        }
+    }
+    .catalog {
+        margin-top: 100px;
+        &__tab {
+            font-size: 15px;
+        }
+        &__content {
+            justify-content: space-around;
+        }
+    }
+    .footer {
+        margin-top: 80px;
+        &__info {
+            width: 332px;
+            height: 160px;
+            padding: 0;
+        }
+        &__addr {
+            margin-top: 15px;
+            margin-bottom: 17px;
+            font-size: 12px;
+        }
+        &__phone {
+            font-size: 18px;
+            margin-bottom: 22px;
+        }
+        &__social-item {
+            height: 40px;
+            width: 40px;
+            img {
+                height: 18px;
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 17px;
+    }
+
+    .header {
+        &__logo {
+            width: 140px;
+        }
+        &__official {
+            font-size: 10px;
+            width: 150px;
+            span {
+                font-size: 14px;
+            }
+        }
+        &__contacts {
+            a {
+                font-size: 13px;
+            }
+            .button {
+                width: 115px;
+                height: 25px;
+                font-size: 9px;
+            }
+        }
+
+    }
+    .promo {
+        height: 376px;
+        min-height: 376px;
+        &__header {
+            font-size: 17px;
+        }
+        &__subheader {
+            font-size: 10px;
+            line-height: 3px;
+        }
+        &__icons {
+            width: 247px;
+        }
+        &__icon {
+            font-size: 10px;
+            img {
+                height: 30px;
+            }
+        }
+        .button_main {
+            width: 180px;
+            height: 28px;
+            font-size: 10px;
+        }
+        &__link {
+            margin-top: 7px;
+            font-size: 12px;
+        }
+    }
+    .benefits {
+        min-height: 362px;
+        &__wrapper {
+            margin-top: 30px;
+            img {
+                height: 50px;
+            }
+        }
+        &__subtitle {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        &__descr {
+            margin-top: 8px;
+            padding: 0 12px;
+            font-size: 10px;
+        }
+    }
+    .consultation {
+        min-height: 312px;
+        padding: 30px 0 30px 15px;
+        .title_left {
+            font-size: 15px;
+        }
+        &__descr {
+            font-size: 11px;
+        }
+        .feed-form {
+            input {
+                height: 27px;
+                font-size: 10px;
+                padding: 0 7px;
+            }
+            .button_submit {
+                height: 27px;
+                font-size: 10px;
+            }
+        }   
+    }
+    .carusel {
+        min-height: 335px;
+        height: 335px;
+        .button-prev {
+            left: 40px;
+        }
+        .button-next {
+            right: 40px;
+        }
+    }
+    .catalog {
+        padding-bottom: 40px;
+        &__tabs {
+            margin-top: 35px;
+
+        }
+        &__tab {
+            width: 150px;
+            height: 35px;
+            font-size: 13px;
+            line-height: 35px;
+        }
+        &__content_active {
+            margin-top: 20px;
+        }
+        &-item {
+          width: 285px;
+          min-height: 400px;
+          img {
+              height: 167px;
+          } 
+          &__subtitle {
+              font-size: 13px;
+          } 
+          &__descr {
+              font-size: 12px;
+          }
+          &__link {
+              font-size: 11px;
+          }
+          li {
+              font-size: 12px;
+          }
+          &__old-price {
+              font-size: 12px;
+          }
+          &__price {
+              font-size: 18px;
+          }
+          &__back {
+              font-size: 11px;
+          }
+          .button_mini {
+              width: 111px;
+              height: 30px;
+              font-size: 11px;
+              line-height: normal;  
+          }
+        }
+    }
+    .reviews {
+        &__review {
+            display: block;
+            margin-bottom: 60px;
+        }
+        img {
+            margin: 0 auto;
+        }
+        &__descr {
+            margin-top: 10px;
+        }
+        &__name, &__marathon, &__text {
+            text-align: center;
+        }
+        &__text {
+            padding: 0 10px;
+        }
+    }
+    .footer {
+        height: 400px;
+        .iframe {
+            height: 400px;
+        }
+        &__info {
+            width: 270px;
+        }
+    }
+    .pageup {
+        height: 5px;
+        width: 23px;
+    }
+    .modal {
+        width: 240px;
+        padding: 20px 20px;
+        min-height: 281px;
+        &_mini {
+            min-height: 94px;
+        }
+        .feed-form_mt25 {
+            width: 202px;
+            margin-top: 8px;
+            input {
+                height: 30px;
+                font-size: 10px;
+                padding: 0 10px;
+            }
+            .button_submit {
+                height: 40px;
+                font-size: 12px;
+            }
+        }
+        &__close {
+            font-size: 26px;
+            right: -26px;
+        }
+        &__subtitle {
+            font-size: 12px;
+        }
+        &__descr {
+            font-size: 11px;
+        }
+    }
+}
+
+@media (max-width: 505px) {
+    .title {
+        font-size: 15px;
+    }
+    .promo {
+        padding: 5px;
+    } 
+    .header {
+        flex-wrap: wrap;
+        &__logo {
+            width: 120px;
+            img {
+                width: 140px;
+            }
+        }
+        &__official {
+            span {
+                font-size: 12px;
+            }
+        }
+        &__contacts {
+            margin-left: 72%;
+            margin-top: 10px;
+            a {
+                font-size: 9px;
+            }
+            .button {
+                width: 83px;
+                height: 16px;
+                font-size: 7px;
+            }
+        }
+
+    }
+    .promo {
+        height: 285px;
+        min-height: 285px;
+        &__wrapper {
+            align-items: center;
+        }
+        &__header {
+            font-size: 17px;
+            line-height: 10px;
+        }
+        &__subheader {
+            font-size: 10px;
+        }
+        &__icons {
+            width: 245px;
+        }
+        &__icon {
+            font-size: 10px;
+            img {
+                height: 22px;
+                margin-bottom: 8px;
+            }
+        }
+        .button_main {
+            margin-top: 11px;
+            width: 137px;
+            height: 19px;
+            font-size: 8px;
+        }
+        &__link {
+            display: none;
+        }
+    }
+    .benefits {
+        min-height: 362px;
+        padding-top: 40px;
+        padding-bottom: 37px;
+        &__wrapper {
+            display: block;
+            margin-top: 15px;
+
+            img {
+                height: 50px;
+            }
+        }
+        &__items {
+            width: 100%;
+            margin-top: 15px;
+        }
+        &__subtitle {
+            margin-top: 4px;
+        }
+        &__descr {
+            margin-top: 3px;
+        }
+    }
+    .consultation {
+        min-height: 200px;
+        padding: 10px 0 20px 10px;
+        .title_left {
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        &__descr {
+            text-align: center;
+            font-size: 10px;
+        }
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 10px;
+            input {
+                height: 16px;
+                font-size: 7px;
+                padding: 0 5px;
+                margin-bottom: 7px;
+            }
+            .button_submit {
+                height: 15px;
+                font-size: 6px;
+            }
+        }   
+    }
+    .carusel {
+        height: 290px;
+        min-height: 290px;
+        .button-prev, .button-next {
+            top: 106%;
+            img {
+                width: 47%;
+            }    
+        }
+        .button-prev {
+            left: 111px;
+        }
+        .button-next {
+            right: 111px;
+        }
+    }
+    .catalog {
+        margin-top: 135px;
+        &__tabs {
+            padding: 0 5px;
+        }
+        &__tab {
+            font-size: 10px;
+        }
+    }
+    .reviews {
+        .animate__fadeInUp {
+            animation-name: none;
+        }
+        &__text {
+            font-size: 13px;
+        }
+    }
+
+
+}
