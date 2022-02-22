@@ -12,11 +12,11 @@
 
 ### Демонстрация
 
-## Версия для ПК
+#### Версия для ПК
 
 [![Watch the video](desktop.png)](https://youtu.be/mouBE-Nlz8A)
 
-## Мобильная версия
+#### Мобильная версия
 
 [![Watch the video](mobil.png)](https://youtu.be/xHMQ11CJ3KE)
 
