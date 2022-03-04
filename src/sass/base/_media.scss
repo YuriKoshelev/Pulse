@@ -473,29 +473,29 @@
         }
     }
     .consultation {
-        min-height: 200px;
-        padding: 10px 0 20px 10px;
+        min-height: 300px;
+        padding: 15px;
         .title_left {
             text-align: center;
-            font-size: 12px;
             margin-bottom: 5px;
         }
         &__descr {
             text-align: center;
-            font-size: 10px;
+            font-size: 12px;
         }
         .feed-form {
             margin: 0 auto;
             margin-top: 10px;
+            width: 45%;
             input {
-                height: 16px;
-                font-size: 7px;
+                height: 23px;
+                font-size: 11px;
                 padding: 0 5px;
-                margin-bottom: 7px;
+                margin-bottom: 13px;
             }
             .button_submit {
-                height: 15px;
-                font-size: 6px;
+                min-height: 21px;
+                font-size: 8px;
             }
         }   
     }
@@ -518,7 +518,7 @@
     .catalog {
         margin-top: 135px;
         &__tabs {
-            padding: 0 5px;
+            padding: 0 9px;
         }
         &__tab {
             font-size: 10px;
